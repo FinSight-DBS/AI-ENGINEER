@@ -1,0 +1,322 @@
+[
+  {
+    "id_transaksi": "D-001",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "Groceries & Kebutuhan Pokok",
+    "nominal": 75000,
+    "jam": 10,
+    "s_anomali": false,
+    "ratio": 0.67,
+    "recon_error": 0.030675,
+    "top_features": [
+      "persona_encoded",
+      "savings_rate",
+      "kategori_encoded"
+    ],
+    "anomaly_context": ""
+  },
+  {
+    "id_transaksi": "D-002",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "Transportasi",
+    "nominal": 50000,
+    "jam": 8,
+    "s_anomali": false,
+    "ratio": 0.93,
+    "recon_error": 0.052978,
+    "top_features": [
+      "savings_rate",
+      "kategori_encoded",
+      "persona_encoded"
+    ],
+    "anomaly_context": ""
+  },
+  {
+    "id_transaksi": "D-003",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "F&B dan Nongkrong",
+    "nominal": 65000,
+    "jam": 12,
+    "s_anomali": true,
+    "ratio": 2.91,
+    "recon_error": 0.136338,
+    "top_features": [
+      "night_owl_spending",
+      "savings_rate",
+      "kategori_encoded"
+    ],
+    "anomaly_context": "Rasio pengeluaran malam hari bulan ini 10.0% — lebih tinggi dari pola normalmu | Savings rate bulan ini 12.0% — pola tabungan berubah dari biasanya | Pola pengeluaran pada kategori 'F&B dan Nongkrong' tidak biasa — nominal Rp 65,000 adalah 0.9x dari rata-rata kategori ini (Rp 69,202)"
+  },
+  {
+    "id_transaksi": "D-004",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "Tagihan & Utilitas",
+    "nominal": 250000,
+    "jam": 9,
+    "s_anomali": true,
+    "ratio": 4.61,
+    "recon_error": 0.230379,
+    "top_features": [
+      "savings_rate",
+      "survival_mode_days",
+      "kategori_encoded"
+    ],
+    "anomaly_context": "Savings rate bulan ini 20.0% — pola tabungan berubah dari biasanya | Sudah 1 hari saldo di bawah 15% gaji bulan ini | Pola pengeluaran pada kategori 'Tagihan & Utilitas' tidak biasa — nominal Rp 250,000 adalah 0.5x dari rata-rata kategori ini (Rp 465,869)"
+  },
+  {
+    "id_transaksi": "D-005",
+    "segmen_demografi": "Profesional",
+    "kategori_detail": "Investasi & Finansial",
+    "nominal": 2000000,
+    "jam": 11,
+    "s_anomali": true,
+    "ratio": 26.6,
+    "recon_error": 1.168611,
+    "top_features": [
+      "savings_rate",
+      "nominal",
+      "survival_mode_days"
+    ],
+    "anomaly_context": "Savings rate bulan ini 35.0% — pola tabungan berubah dari biasanya | Nominal transaksi Rp 2,000,000 — 3.1x dari rata-rata Investasi & Finansial (Rp 635,739) | Sudah 0 hari saldo di bawah 15% gaji bulan ini"
+  },
+  {
+    "id_transaksi": "D-006",
+    "segmen_demografi": "Profesional",
+    "kategori_detail": "Produktivitas & Digital",
+    "nominal": 150000,
+    "jam": 10,
+    "s_anomali": true,
+    "ratio": 19.61,
+    "recon_error": 0.918468,
+    "top_features": [
+      "savings_rate",
+      "nominal",
+      "survival_mode_days"
+    ],
+    "anomaly_context": "Savings rate bulan ini 25.0% — pola tabungan berubah dari biasanya | Nominal transaksi Rp 150,000 — 3.5x dari rata-rata Produktivitas & Digital (Rp 42,260) | Sudah 0 hari saldo di bawah 15% gaji bulan ini"
+  },
+  {
+    "id_transaksi": "D-007",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "Kesehatan & Perawatan Diri",
+    "nominal": 180000,
+    "jam": 14,
+    "s_anomali": false,
+    "ratio": 0.97,
+    "recon_error": 0.041791,
+    "top_features": [
+      "savings_rate",
+      "survival_mode_days",
+      "kategori_encoded"
+    ],
+    "anomaly_context": ""
+  },
+  {
+    "id_transaksi": "D-008",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "F&B dan Nongkrong",
+    "nominal": 250000,
+    "jam": 23,
+    "s_anomali": true,
+    "ratio": 22.13,
+    "recon_error": 1.035882,
+    "top_features": [
+      "night_owl_spending",
+      "survival_mode_days",
+      "nominal"
+    ],
+    "anomaly_context": "Rasio pengeluaran malam hari bulan ini 40.0% — lebih tinggi dari pola normalmu | Sudah 8 hari saldo di bawah 15% gaji bulan ini | Nominal transaksi Rp 250,000 — 3.6x dari rata-rata F&B dan Nongkrong (Rp 69,202)"
+  },
+  {
+    "id_transaksi": "D-009",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "Belanja Online & Fashion",
+    "nominal": 800000,
+    "jam": 2,
+    "s_anomali": true,
+    "ratio": 21.47,
+    "recon_error": 1.231006,
+    "top_features": [
+      "night_owl_spending",
+      "survival_mode_days",
+      "savings_rate"
+    ],
+    "anomaly_context": "Rasio pengeluaran malam hari bulan ini 35.0% — lebih tinggi dari pola normalmu | Sudah 10 hari saldo di bawah 15% gaji bulan ini | Savings rate bulan ini -10.0% (negatif) — pengeluaran melebihi pemasukan"
+  },
+  {
+    "id_transaksi": "D-010",
+    "segmen_demografi": "Profesional",
+    "kategori_detail": "Hiburan & Langganan",
+    "nominal": 600000,
+    "jam": 1,
+    "s_anomali": true,
+    "ratio": 38.46,
+    "recon_error": 1.791079,
+    "top_features": [
+      "night_owl_spending",
+      "nominal",
+      "savings_rate"
+    ],
+    "anomaly_context": "Rasio pengeluaran malam hari bulan ini 30.0% — lebih tinggi dari pola normalmu | Nominal transaksi Rp 600,000 — 4.5x dari rata-rata Hiburan & Langganan (Rp 134,237) | Savings rate bulan ini -8.0% (negatif) — pengeluaran melebihi pemasukan"
+  },
+  {
+    "id_transaksi": "D-011",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "F&B dan Nongkrong",
+    "nominal": 1500000,
+    "jam": 14,
+    "s_anomali": true,
+    "ratio": 52.31,
+    "recon_error": 2.44831,
+    "top_features": [
+      "nominal",
+      "survival_mode_days",
+      "savings_rate"
+    ],
+    "anomaly_context": "Nominal transaksi Rp 1,500,000 — 21.7x dari rata-rata F&B dan Nongkrong (Rp 69,202) | Sudah 5 hari saldo di bawah 15% gaji bulan ini | Savings rate bulan ini 1.0% — pola tabungan berubah dari biasanya"
+  },
+  {
+    "id_transaksi": "D-012",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "Belanja Online & Fashion",
+    "nominal": 3500000,
+    "jam": 16,
+    "s_anomali": true,
+    "ratio": 35.14,
+    "recon_error": 2.014937,
+    "top_features": [
+      "nominal",
+      "savings_rate",
+      "night_owl_spending"
+    ],
+    "anomaly_context": "Nominal transaksi Rp 3,500,000 — 18.5x dari rata-rata Belanja Online & Fashion (Rp 189,561) | Savings rate bulan ini -2.0% (negatif) — pengeluaran melebihi pemasukan | Rasio pengeluaran malam hari bulan ini 8.0% — lebih tinggi dari pola normalmu"
+  },
+  {
+    "id_transaksi": "D-013",
+    "segmen_demografi": "Profesional",
+    "kategori_detail": "Tagihan & Utilitas",
+    "nominal": 9000000,
+    "jam": 15,
+    "s_anomali": true,
+    "ratio": 51.25,
+    "recon_error": 2.563719,
+    "top_features": [
+      "nominal",
+      "persona_encoded",
+      "survival_mode_days"
+    ],
+    "anomaly_context": "Nominal transaksi Rp 9,000,000 — 19.3x dari rata-rata Tagihan & Utilitas (Rp 465,869) | Perilaku belanja berubah dari persona biasamu | Sudah 4 hari saldo di bawah 15% gaji bulan ini"
+  },
+  {
+    "id_transaksi": "D-014",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "Kesehatan & Perawatan Diri",
+    "nominal": 200000,
+    "jam": 13,
+    "s_anomali": true,
+    "ratio": 3.91,
+    "recon_error": 0.169073,
+    "top_features": [
+      "survival_mode_days",
+      "kategori_encoded",
+      "persona_encoded"
+    ],
+    "anomaly_context": "Sudah 12 hari saldo di bawah 15% gaji bulan ini | Pola pengeluaran pada kategori 'Kesehatan & Perawatan Diri' tidak biasa — nominal Rp 200,000 adalah 1.1x dari rata-rata kategori ini (Rp 174,004) | Perilaku belanja berubah dari persona biasamu"
+  },
+  {
+    "id_transaksi": "D-015",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "Hiburan & Langganan",
+    "nominal": 180000,
+    "jam": 22,
+    "s_anomali": true,
+    "ratio": 14.99,
+    "recon_error": 0.697953,
+    "top_features": [
+      "survival_mode_days",
+      "night_owl_spending",
+      "kategori_encoded"
+    ],
+    "anomaly_context": "Sudah 14 hari saldo di bawah 15% gaji bulan ini | Rasio pengeluaran malam hari bulan ini 15.0% — lebih tinggi dari pola normalmu | Pola pengeluaran pada kategori 'Hiburan & Langganan' tidak biasa — nominal Rp 180,000 adalah 1.3x dari rata-rata kategori ini (Rp 134,237)"
+  },
+  {
+    "id_transaksi": "D-016",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "NLP Classified Transfer",
+    "nominal": 150000,
+    "jam": 11,
+    "s_anomali": false,
+    "ratio": 1.04,
+    "recon_error": 0.046767,
+    "top_features": [
+      "savings_rate",
+      "survival_mode_days",
+      "kategori_encoded"
+    ],
+    "anomaly_context": ""
+  },
+  {
+    "id_transaksi": "D-017",
+    "segmen_demografi": "Mahasiswa",
+    "kategori_detail": "F&B dan Nongkrong",
+    "nominal": 2500000,
+    "jam": 1,
+    "s_anomali": true,
+    "ratio": 152.68,
+    "recon_error": 7.145478,
+    "top_features": [
+      "nominal",
+      "night_owl_spending",
+      "survival_mode_days"
+    ],
+    "anomaly_context": "Nominal transaksi Rp 2,500,000 — 36.1x dari rata-rata F&B dan Nongkrong (Rp 69,202) | Rasio pengeluaran malam hari bulan ini 45.0% — lebih tinggi dari pola normalmu | Sudah 15 hari saldo di bawah 15% gaji bulan ini"
+  },
+  {
+    "id_transaksi": "D-018",
+    "segmen_demografi": "First Jobber",
+    "kategori_detail": "Belanja Online & Fashion",
+    "nominal": 4000000,
+    "jam": 3,
+    "s_anomali": true,
+    "ratio": 80.2,
+    "recon_error": 4.598637,
+    "top_features": [
+      "nominal",
+      "night_owl_spending",
+      "savings_rate"
+    ],
+    "anomaly_context": "Nominal transaksi Rp 4,000,000 — 21.1x dari rata-rata Belanja Online & Fashion (Rp 189,561) | Rasio pengeluaran malam hari bulan ini 38.0% — lebih tinggi dari pola normalmu | Savings rate bulan ini -18.0% (negatif) — pengeluaran melebihi pemasukan"
+  },
+  {
+    "id_transaksi": "D-019",
+    "segmen_demografi": "Profesional",
+    "kategori_detail": "Transportasi",
+    "nominal": 5000000,
+    "jam": 0,
+    "s_anomali": true,
+    "ratio": 179.32,
+    "recon_error": 10.176234,
+    "top_features": [
+      "nominal",
+      "night_owl_spending",
+      "savings_rate"
+    ],
+    "anomaly_context": "Nominal transaksi Rp 5,000,000 — 29.4x dari rata-rata Transportasi (Rp 169,952) | Rasio pengeluaran malam hari bulan ini 30.0% — lebih tinggi dari pola normalmu | Savings rate bulan ini -12.0% (negatif) — pengeluaran melebihi pemasukan"
+  },
+  {
+    "id_transaksi": "D-020",
+    "segmen_demografi": "Profesional",
+    "kategori_detail": "Produktivitas & Digital",
+    "nominal": 50000,
+    "jam": 10,
+    "s_anomali": true,
+    "ratio": 18.4,
+    "recon_error": 0.861737,
+    "top_features": [
+      "savings_rate",
+      "night_owl_spending",
+      "survival_mode_days"
+    ],
+    "anomaly_context": "Savings rate bulan ini 30.0% — pola tabungan berubah dari biasanya | Rasio pengeluaran malam hari bulan ini 2.0% — lebih tinggi dari pola normalmu | Sudah 0 hari saldo di bawah 15% gaji bulan ini"
+  }
+]
