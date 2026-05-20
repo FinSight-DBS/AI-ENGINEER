@@ -1,0 +1,69 @@
+{
+  "user_id": "USR-322",
+  "window_start": "2026-03-10",
+  "window_end": "2026-03-23",
+  "is_anomaly": true,
+  "reconstruction_error": 0.039267,
+  "threshold": 0.050666,
+  "severity": "high",
+  "anomaly_days": [
+    {
+      "tanggal": "2026-03-10",
+      "mse_hari": 0.130955,
+      "top_categories": [
+        {
+          "kategori": "Groceries & Kebutuhan Pokok",
+          "actual_amount": 43751.74,
+          "reconstructed_amount": 13453.37,
+          "delta": 30298.37
+        },
+        {
+          "kategori": "Transportasi",
+          "actual_amount": 0.0,
+          "reconstructed_amount": 0.0,
+          "delta": 0.0
+        },
+        {
+          "kategori": "Tagihan & Utilitas",
+          "actual_amount": 0.0,
+          "reconstructed_amount": 42785.69,
+          "delta": 0.0
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-11",
+      "mse_hari": 0.081043,
+      "top_categories": [
+        {
+          "kategori": "Tagihan & Utilitas",
+          "actual_amount": 357754.18,
+          "reconstructed_amount": 70311.62,
+          "delta": 287442.55
+        },
+        {
+          "kategori": "Transportasi",
+          "actual_amount": 206764.79,
+          "reconstructed_amount": 36654.41,
+          "delta": 170110.38
+        },
+        {
+          "kategori": "Produktivitas & Digital",
+          "actual_amount": 33491.57,
+          "reconstructed_amount": 3892.83,
+          "delta": 29598.74
+        }
+      ]
+    }
+  ],
+  "user_profile": {
+    "segmen": "First Jobber",
+    "persona": "Unconflicted",
+    "gaji_bulanan": 4830000.0
+  },
+  "summary_stats": {
+    "total_anomaly_days": 2,
+    "most_deviant_category": "Tagihan & Utilitas",
+    "total_excess_spending": 517450.05
+  }
+}
